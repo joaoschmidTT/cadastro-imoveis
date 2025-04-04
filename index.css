@@ -1,0 +1,94 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40;
+    padding: 20px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+
+table {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+table th {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+}
+
+table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.btn-custom {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    transition: background-color 0.2s;
+}
+
+.btn-custom:hover {
+    background-color: #0b5ed7;
+}
+
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.6s ease-in-out;
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+input, select, button {
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url('image/imagemprefeitura.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    margin: 0;
+    backdrop-filter: brightness(0.95);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}

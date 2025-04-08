@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef5ec;
+    margin: 0;
+    padding: 20px;
+}
+
+.container_listagem_imovies {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border: 3px solid #bde5c8;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topo h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #2e7d32;
+}
+
+.botao_cadastro {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao_cadastro:hover {
+    background-color: #45a049;
+}
+
+.form-busca {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-busca input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border: 2px solid #bde5c8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-busca button {
+    padding: 10px 16px;
+    border: none;
+    background-color: #66bb6a;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-busca button:hover {
+    background-color: #4caf50;
+}
+
+p strong {
+    color: #2e7d32;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #d4e2d4;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #d2f5d6;
+    color: #2e7d32;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fdf9;
+}
+
+.botoes-acoes {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+a.editar, a.excluir {
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a.editar {
+    background-color: #aee571;
+    color: #2e7d32;
+}
+
+a.excluir {
+    background-color: #f44336;
+    color: white;
+}
+
+.voltar-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.voltar_inicio {
+    background-color: #8bc34a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.voltar_inicio:hover {
+    background-color: #689f38;
+}
+
+
+
+@media (max-width: 414px) {
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .form-busca {
+        flex-direction: column;
+    }
+
+    .form-busca input[type="text"],
+    .form-busca button,
+    .botao_cadastro,
+    .voltar_inicio {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .botoes-acoes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    a.editar,
+    a.excluir {
+        width: 48%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,76 @@
+body {
+    background: #e0e5ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container_tela_cadastro {
+    max-width: 600px;
+    margin: 60px auto; 
+    padding: 30px;
+}
+
+.form-box {
+    background: #f1f3f6;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #bec4d1,
+                -8px -8px 16px #ffffff;
+    width: 100%;
+}
+
+h2 {
+    color: #041835;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    color: #333;
+    font-weight: 500;
+}
+
+input, select {
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px #cdd3dc,
+                inset -2px -2px 5px #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+button {
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px #cdd3dc,
+                -2px -2px 8px #ffffff;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 480px) {
+    .container_tela_cadastro {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    input, select {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

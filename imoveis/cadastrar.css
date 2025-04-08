@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5a5454;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.transparenttextures.com/patterns/brick-wall.png');
+}
+
+.container_cadastar_imovies {
+    background-color: #ffffffee;
+    border: 2px solid #c8e6c9;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    margin: 60px auto; 
+    padding: 30px;
+}
+
+
+
+
+h2 {
+    color: #1b5e20;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+proprietario{
+    background-color: #ffffffee;
+    border: 1px solid #c8e6c9;
+    padding: 25px;
+    border-radius: 16px;
+    max-width: 550px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+label.proprietario {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f9fff9;
+    border-color: #66bb6a;
+    outline: none;
+    box-shadow: 0 0 5px #a5d6a7;
+}
+
+
+button.botao_salvar {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button.botao_salvar:hover {
+    background-color: #388e3c;
+}
+
+
+button.botao_voltar {
+    background-color: #585858;
+    color: white;
+    margin: 20px auto 0;
+    display: block;
+    width: 34%;
+    border-radius: 9px;
+    padding: 12px 20px;
+
+}
+
+button.botao_voltar:hover {
+    background-color: #636060;
+}
+
+@media (max-width: 414px) {
+    .container_cadastar_imovies {
+        padding: 20px;
+        margin: 30px 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    input[type="text"],
+    select {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    button.botao_salvar,
+    button.botao_voltar {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    button.botao_voltar {
+        margin-top: 15px;
+    }
+}
+
+
